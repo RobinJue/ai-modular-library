@@ -1,0 +1,8 @@
+git+https://github.com/RobinJue/Logger.git
+python-dotenv
+openai
+anthropic
+google-generativeai
+
+# Required files (must be present in main directory):
+# ../secrets.env - API keys and secrets file 

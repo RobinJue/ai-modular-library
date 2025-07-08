@@ -1,0 +1,147 @@
+{
+  "explanation": {
+    "types": {
+      "high": "Premium models with highest quality and accuracy",
+      "budget": "Cheapest models for cost-effective operations",
+      "reasoning": "Models optimized for complex reasoning tasks",
+      "none": "Standard models without special categorization"
+    },
+    "rules": {
+      "high_per_vendor": "Each vendor can have only one high model",
+      "budget_per_vendor": "Each vendor can have only one budget model",
+      "reasoning_multiple": "Vendors can have multiple reasoning models",
+      "none_multiple": "Vendors can have multiple none models"
+    }
+  },
+
+
+  
+  "models": {
+    "gpt41": {
+      "vendor": "OpenAI",
+      "vendor_model_id": "gpt-4.1",
+      "price_per_input_tokens": 0.000002,
+      "price_per_output_tokens": 0.000008,
+      "tokens_provided": true,
+      "type": "high"
+    },
+    "gpt41mini": {
+      "vendor": "OpenAI",
+      "vendor_model_id": "gpt-4.1-mini",
+      "price_per_input_tokens": 0.0000004,
+      "price_per_output_tokens": 0.0000016,
+      "tokens_provided": true,
+      "type": "none"
+    },
+    "gpt41nano": {
+      "vendor": "OpenAI",
+      "vendor_model_id": "gpt-4.1-nano",
+      "price_per_input_tokens": 0.0000001,
+      "price_per_output_tokens": 0.0000004,
+      "tokens_provided": true,
+      "type": "budget"
+    },
+    "o3": {
+      "vendor": "OpenAI",
+      "vendor_model_id": "o3",
+      "price_per_input_tokens": 0.000002,
+      "price_per_output_tokens": 0.000008,
+      "tokens_provided": true,
+      "type": "reasoning"
+    },
+    "o4mini": {
+      "vendor": "OpenAI",
+      "vendor_model_id": "o4-mini",
+      "price_per_input_tokens": 0.0000011,
+      "price_per_output_tokens": 0.0000044,
+      "tokens_provided": true,
+      "type": "reasoning"
+    },
+
+
+    "claude3haiku": {
+      "vendor": "Anthropic",
+      "vendor_model_id": "claude-3-5-haiku-20241022",
+      "price_per_input_tokens": 0.0000008,
+      "price_per_output_tokens": 0.000004,
+      "tokens_provided": true,
+      "type": "budget"
+    },
+    "claude4sonnet": {
+      "vendor": "Anthropic",
+      "vendor_model_id": "claude-sonnet-4-20250514",
+      "price_per_input_tokens": 0.000003,
+      "price_per_output_tokens": 0.000015,
+      "tokens_provided": true,
+      "type": "none"
+    },
+    "claude4opus": {
+      "vendor": "Anthropic",
+      "vendor_model_id": "claude-opus-4-20250514",
+      "price_per_input_tokens": 0.000015,
+      "price_per_output_tokens": 0.000075,
+      "tokens_provided": true,
+      "type": "high"
+    },
+
+
+    "gemini25pro": {
+      "vendor": "Gemini",
+      "vendor_model_id": "gemini-1.5-pro-latest",
+      "price_per_input_tokens": 0.00000125,
+      "price_per_output_tokens": 0.00001,
+      "tokens_provided": false,
+      "type": "reasoning"
+    },
+    "gemini25flash": {
+      "vendor": "Gemini",
+      "vendor_model_id": "gemini-1.5-flash",
+      "price_per_input_tokens": 0.0000003,
+      "price_per_output_tokens": 0.0000025,
+      "tokens_provided": false,
+      "type": "none"
+    },
+    "gemini25flashlite": {
+      "vendor": "Gemini",
+      "vendor_model_id": "gemini-1.5-flash-lite-preview",
+      "price_per_input_tokens": 0.0000001,
+      "price_per_output_tokens": 0.000000025,
+      "tokens_provided": false,
+      "type": "budget"
+    },
+    "gemini20flash": {
+      "vendor": "Gemini",
+      "vendor_model_id": "gemini-pro",
+      "price_per_input_tokens": 0.0000001,
+      "price_per_output_tokens": 0.0000004,
+      "tokens_provided": false,
+      "type": "none"
+    },
+    "gemini20flashlite": {
+      "vendor": "Gemini",
+      "vendor_model_id": "gemini-flash-lite",
+      "price_per_input_tokens": 0.000000075,
+      "price_per_output_tokens": 0.0000003,
+      "tokens_provided": false,
+      "type": "budget"
+    },
+
+
+    "deepseekchat": {
+      "vendor": "DeepSeek",
+      "vendor_model_id": "deepseek-chat",
+      "price_per_input_tokens": 0.00000007,
+      "price_per_output_tokens": 0.0000011,
+      "tokens_provided": true,
+      "type": "none"
+    },
+    "deepseekreasoner": {
+      "vendor": "DeepSeek",
+      "vendor_model_id": "deepseek-reasoner",
+      "price_per_input_tokens": 0.00000014,
+      "price_per_output_tokens": 0.00000219,
+      "tokens_provided": true,
+      "type": "reasoning"
+    }
+  }
+} 

@@ -1,0 +1,31 @@
+# Main .gitignore for this repository
+# This excludes Logger (separate library) and sensitive files
+# The AiModularLibrary folder has its own .gitignore for when it's copied to other projects
+
+# Exclude Logger folder (separate library)
+Logger/
+
+# Sensitive files - Never commit API keys!
+secrets.env
+*.env
+.env.local
+.env.production
+.env.staging
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup 
